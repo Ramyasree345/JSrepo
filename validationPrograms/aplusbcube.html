@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>(a+b)^3</title>
+    <style>
+        #result{
+            color:red
+        }
+    </style>
+    <script src="aplusbcube.js"></script>
+</head>
+</head>
+<body>
+    <form name="f1" action="Myserver" method="get" onsubmit="return cube()">
+        <table align="center" cellspacing = "10px">
+            <tr>
+                <td>
+                    <label>Enter First value</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 1st number" id="t1" name="n1">
+                    <span>*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter Second value</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 2nd number"id="t2" name="n2">
+                    <span>*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="a+b cube ">
+                </td>
+                <td>
+                    <button onclick="eraseData()">Clear</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="result"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

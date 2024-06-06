@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Interest</title>
+    <style>
+        #result{
+            color:red
+        }
+        span{
+            color:red
+        }
+    </style>
+    <script src="SimpleInterest.js"></script>
+</head>
+</head>
+<body>
+    <form name="f1" action="Myserver" method="get" onsubmit="return simpleIntrest()">
+        <table align="center" cellspacing = "10px">
+            <tr>
+                <td>
+                    <label>Principle amount</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Principle amount" id="t1" name="n1">
+                    <span>*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Time Period</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Time Period"id="t2" name="n2">
+                    <span>*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Rate of Interest</label>
+                </td>
+                <td>
+                    <input type="text" placeholder=" enter Rate of Interest"id="t3" name="n3">
+                    <span>*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Simple Interest">
+                </td>
+                <td>
+                    <button onclick="eraseData()">Clear</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="result"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

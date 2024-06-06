@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Average</title>
+    <script src="Average.js"></script>
+    <style>
+        #s1,#s2,#s3,#s4,#s5,#s6{
+            color:red;
+        }
+        span{
+            color:red
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Average of 6 numbers</h1>
+    </center>
+    <form name="f1" action="Myserver" method="get" onsubmit="return doAvg()">
+        <table align="center" cellspacing = "10px">
+            <tr>
+                <td>
+                    <label>1st Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 1st number" id="t1" name="n1">
+                    <span id="s1">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>2nd Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 2nd number" id="t2" name="n2">
+                    <span id="s2">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>3rd Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 3rd number" id="t3" name="n3">
+                    <span id="s3">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>4th Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 4th number" id="t4" name="n4">
+                    <span id="s4">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>5rd Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 5th number" id="t5" name="n5">
+                    <span id="s5">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>6rd Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter 6th number" id="t6" name="n6">
+                    <span id="s6">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Average">
+                </td>
+                <td>
+                    <button onclick="eraseData()">Clear</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="s7"></span>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #s1{
+            color:red;
+        }
+        #s2{
+            color:orange;
+        }
+    </style>
+    <script src="Areaofcircle.js"></script>
+</head>
+<body>
+    <form name="f1" action="Serverpage1" method="get" onsubmit="return area()">
+        <table align="center" cellspacing = "10px">
+            <tr>
+                <td>
+                    <label>Radius</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter radius" id="t1" name="n1">
+                    <span id="s1">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Find Area">
+                </td>
+                <td>
+                    <button onclick="eraseData()">Clear</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="s2"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
